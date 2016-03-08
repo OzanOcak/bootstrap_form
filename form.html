@@ -1,0 +1,138 @@
+<!doctype html>
+<html >
+  <head>
+    <title>Form</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  
+    <!--form-horizontal attribute is for turning boxes in columns-->
+	<form class="form-horizontal">
+	<fieldset>
+	 <legend>Basic Form </legend>
+	 <span class="glyphicon glyphicon-phone">
+	 
+	 <div class="form-group">
+	   <label class="col-sm-2 control-label" for="inputName">Name :</label>
+	   <!--class="sr-only" doent show  label on screen but screen freader reads it for disable people-->
+	   <div class="col-sm-10">
+	       <input class="form-control" type="text" id="inputName" placeHolder="Ozan Ocak" value="Ozan Ocak" readonly>
+	   </div>
+	 </div> 
+	 
+	 <div class="form-group">
+	   <label class="col-sm-2 control-label" for="inputEmail">Email :</label>
+	   <div class="col-sm-10">
+	      <input class="form-control" type="text" id="inputEmail" placeHolder="Email" disabled>
+	   </div>
+	 </div> 
+	 
+	 <div class="form-group">	 
+	   <label class="col-sm-2 control-label" for="selectReason">Reason :</label>
+	   <div class="col-sm-10">
+	    <select class="form-control" id ="selectReason">
+	     <option>choose...</option>
+	     <option>voluteering</option>
+		 <option>adress change</option>
+		 <option>inquiery</option>
+		 <option>travelling</option>
+	    </select>
+	   </div>
+	 </div>
+	 
+	 <div class="form-group">
+	 <div class="checkbox">
+     <div class="col-sm-10 col-sm-offset-2"> 	 
+       <label>	 
+	     <input type="checkbox" id="inputAddList">
+	     add me mail list
+	   </label>
+	 </div> 
+	 </div>
+	 </div>
+	 
+	 <!--control-label, form-control attributes provide better css-->
+	 <div class="form-group">
+	   <label class="col-sm-2 control-label" for="inputTextarea">Comment :</label>
+	   <div class="col-sm-10">
+	      <textarea class="form-control id="inputTextarea" placeHolder="tell us what you think "></textarea>
+	   </div>
+	 </div>
+	 <!--"disable" attribute turn the element unable to click -->
+	 <!--both radio input have same names so you can choose only one of them-->
+	 <div class="form-group">
+	 <div class="col-sm-10 col-sm-offset-2">
+	 <div class="radio">
+	   <label>
+	     <input name="option" type="radio">
+		 one
+	   </label>
+	 </div>
+	 
+	 <div class="radio">
+	   <label>
+	     <input name="option" type="radio">
+		 two
+	   </label>
+	 </div>
+	 </div>
+	 </div>
+
+	 <!--"radio-line" or "checkbox-inline" and even "form-inline" attributes 
+	                    turn elements inline unless they are already wrap with radio/checkbox-->
+     <div class="form-group">
+      <div class="col-sm-10 col-sm-offset-2">	 
+	   <label class="radio-inline">
+	 	 <input name="option1" type="radio">
+		 one
+	   </label> 
+	   <label class="radio-inline">
+	     <input name="option1" type="radio">
+		 two
+	   </label>
+	  </div>
+	 </div>
+	 
+	 <div class="form-group">
+	 <div class="checkbox">
+     <div class="col-sm-10 col-sm-offset-2"> 	 
+        <input class="btn btn-default  " type="submit" value="submit">
+	 </div> 
+	 </div>
+	 </div>
+	 
+	 
+	 <!--has-warning/error/success-->
+	 <div class="form-group has-success">
+	   <label class="control-label col-sm-2" for="inputWarning">warning :</label>
+	   <div class="col-sm-9 pull-left">
+	    <!--input-group provides span and input inline as a group-->   
+	    <div class="input-group">
+	     <span class="input-group-addon">$</span>
+	     <input class="form-control " id="inputWarning" type="text" placeHolder="amount in dollar">
+		 <span class="input-group-addon">.00</span>
+	    </div>
+	   </div>
+	 </div>
+	 
+	 <div class="form-group">
+	  <div class="col-sm-4 col-sm-offset-2" >
+	   <div class="input-group">
+	     <input type="text" class="form-control" placeHolder="Search...">
+		 <span class="input-group-btn">
+		   <button class="btn btn-warning" type="button">Go</button>
+		 </span>
+       </div>
+	  </div>
+	 </div>
+	 </fieldset>
+	 
+     <label class="pull-right">@ozanocak<label>
+	</form> 
+	
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+</html>
